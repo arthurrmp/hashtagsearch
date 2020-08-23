@@ -1,0 +1,7 @@
+{
+  "name": "HashtagSearch",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
