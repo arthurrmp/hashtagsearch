@@ -1,7 +1,7 @@
 # Hashtag Search (Front-end)
 Front-end do projeto Hashtag Search, criado com **Ionic (Angular)** que permite que o usuário busque, selecione e salve tweets com determinada hashtag para exibição em telão de forma prática e rápida.
 
-O sistema em sua versão inicial consiste em duas telas, responsivas e com componentes diferenciados com base no tamanho da tela e qual dispositivo está sendo usado. 
+O sistema em sua versão inicial consiste em duas telas, responsivas e com componentes diferenciados com base no tamanho da tela e qual dispositivo está sendo usado e qual a preferência de tema do usuário (Modo escuro automático com base no escolhido nas configurações do celular). 
 
 **Vídeo demostração**
 
