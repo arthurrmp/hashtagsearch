@@ -9,7 +9,7 @@ import { TweetDetalhesPage } from '../pages/tweet-detalhes/tweet-detalhes.page';
 })
 export class ApiService {
 
-  public url = 'http://192.168.1.3:3000';
+  public url = 'http://localhost:3000';
 
   constructor(private httpClient: HttpClient, public modalController: ModalController, public platform: Platform) {
   }
