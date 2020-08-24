@@ -38,7 +38,7 @@ Tela que mostra os tweets exibidos no telão durante o dia, sendo os mais novos 
 4- Para iniciar um web server de desenvolvimento e testes, você pode usar o comando **ionic serve** no terminal na pasta do projeto.
 
 Após isso, automaticamente será aberto uma página web com o projeto.
-Seguindo os tutoriais do [Capacitor](https://capacitorjs.com), pode-se compilar o mesmo projeto para qualquer aplicação nativa de qualquer sistema, seja mobile ou desktop.
+Seguindo os tutoriais do [Capacitor](https://capacitorjs.com), pode-se compilar este projeto para qualquer aplicação nativa de qualquer sistema, seja mobile ou desktop.
 
    
 
