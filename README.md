@@ -22,9 +22,11 @@ Tela que mostra os tweets exibidos no telão durante o dia, sendo os mais novos 
 
 1- Instale o [Node.JS](https://nodejs.org/pt-br/).
 
-2- Abra uma janela do CMD e execute o comando de instalação do ionic: 
+2- Abra uma janela do CMD **na pasta do projeto** e execute os seguintes comandos (instalação do ionic e instalação do módulos npm): 
 
    **npm install -g @ionic/cli**
+   **npm i**
+   
    
 3- *(Ignorar se o backend estiver rodando na mesma máquina)* 
 
@@ -32,7 +34,7 @@ Tela que mostra os tweets exibidos no telão durante o dia, sendo os mais novos 
    
    **src/app/services/api.service.ts**
    
-4- Para iniciar um web server de desenvolvimento e testes, você pode usar o comando **ionic serve** em um terminal na pasta do projeto.
+4- Para iniciar um web server de desenvolvimento e testes, você pode usar o comando **ionic serve** no terminal na pasta do projeto.
 
 Após isso, automaticamente será aberto uma página web com o projeto.
 Seguindo os tutoriais do [Capacitor](https://capacitorjs.com), pode-se compilar o mesmo projeto para qualquer aplicação nativa de qualquer sistema, seja mobile ou desktop.
