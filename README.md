@@ -22,7 +22,7 @@ Tela que mostra os tweets exibidos no telão durante o dia, sendo os mais novos 
 
 1- Instale o [Node.JS](https://nodejs.org/pt-br/).
 
-2- Abra uma janela do CMD **na pasta do projeto** e execute os seguintes comandos (instalação do ionic e instalação do módulos npm): 
+2- Abra uma janela do terminal na pasta do projeto e execute os seguintes comandos (instalação do ionic e instalação do módulos npm): 
 
    **npm install -g @ionic/cli**
    
