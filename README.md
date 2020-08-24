@@ -25,6 +25,7 @@ Tela que mostra os tweets exibidos no telão durante o dia, sendo os mais novos 
 2- Abra uma janela do CMD **na pasta do projeto** e execute os seguintes comandos (instalação do ionic e instalação do módulos npm): 
 
    **npm install -g @ionic/cli**
+   
    **npm i**
    
    
