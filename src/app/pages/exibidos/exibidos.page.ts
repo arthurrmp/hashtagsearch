@@ -17,10 +17,14 @@ export class ExibidosPage {
     this.obterExibidos();
   }
 
-  obterExibidos() {
+  obterExibidos(event?) {
     this.api.obterExibidos().subscribe(data => {
       this.tweets = data;
       console.log(data);
+
+      if (event) {
+        event.target.complete();
+      }
     })
   }
 

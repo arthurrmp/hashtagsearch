@@ -8,13 +8,31 @@
 
 <ion-content [fullscreen]="true">
 
-<!-- Código para implementação futura de busca do histórico por data -->
+  <!-- Código para implementação futura de busca do histórico por data -->
   <!-- 
     <ion-item>
     <ion-label>Selecionar dia...</ion-label>
     <ion-datetime [pickerOptions]="datetimeOptions" [(ngModel)]="date" cancelText="Cancelar" doneText="OK" [max]="maxDate" min="2020-08-24" display-format="DD.MM.YYYY"></ion-datetime>
   </ion-item>
  -->
+
+
+  <!-- Verificação para escolha de como será a interação do usuário em atualização 
+        * Se for mobile, será via pull-to-refresh
+        * Se for web, será via um floating action button
+  -->
+  <ng-container *ngIf="platform.is('mobile')">
+    <ion-refresher slot="fixed" (ionRefresh)="buscarTweets($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+  </ng-container>
+  <ng-container *ngIf="platform.is('desktop')">
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="buscarTweets()">
+        <ion-icon name="refresh"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ng-container>
   <ion-list>
     <div *ngFor="let tweet of tweets; index as i">
       <div [ngSwitch]="i">
