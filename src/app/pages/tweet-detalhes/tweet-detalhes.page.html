@@ -1,0 +1,43 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="dispensarModal()">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="abrirLinkTweet()">
+        <ion-icon slot="icon-only" name="open-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <ion-card-content>
+    <ion-avatar>
+      <ion-img [src]="tweet.foto"></ion-img>
+    </ion-avatar>
+
+    <div class="ion-text-center">
+      <h1 class="nome">{{tweet.nome}}</h1>
+      <h2>@{{tweet.usuario}}</h2>
+    </div>
+
+  </ion-card-content>
+  <div class="ion-text-center tweet">
+    <ion-text>
+      <p>"{{tweet.tweet}}"</p>
+    </ion-text>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-button class="exibir" size="large" expand="full" color="success" (click)="inserirTweet()">
+    Exibir no painel
+  </ion-button>
+
+</ion-footer>

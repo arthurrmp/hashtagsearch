@@ -1,0 +1,6 @@
+.tweet {
+    cursor: pointer;
+}
+.tweet:hover {
+    --background: var(--ion-color-medium-shade-light);
+}

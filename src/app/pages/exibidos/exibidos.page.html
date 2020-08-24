@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tweets - Exibidos hoje
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<!-- Código para implementação futura de busca do histórico por data -->
+  <!-- 
+    <ion-item>
+    <ion-label>Selecionar dia...</ion-label>
+    <ion-datetime [pickerOptions]="datetimeOptions" [(ngModel)]="date" cancelText="Cancelar" doneText="OK" [max]="maxDate" min="2020-08-24" display-format="DD.MM.YYYY"></ion-datetime>
+  </ion-item>
+ -->
+  <ion-list>
+    <div *ngFor="let tweet of tweets; index as i">
+      <div [ngSwitch]="i">
+        <div *ngSwitchCase="0">
+          <ion-list-header>
+            <ion-label>Mais recente</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="{{tweet.foto}}">
+            </ion-avatar>
+            <ion-label>
+              <h2>{{tweet.usuario}}</h2>
+              <p>{{tweet.tweet}}</p>
+            </ion-label>
+          </ion-item>
+        </div>
+
+        <div *ngSwitchCase="1">
+          <ion-list-header>
+            <ion-label>Histórico</ion-label>
+          </ion-list-header>
+          <ion-item class="tweet" (click)="confirmarExibir(tweet)">
+            <ion-avatar slot="start">
+              <img src="{{tweet.foto}}">
+            </ion-avatar>
+            <ion-label>
+              <h2>{{tweet.usuario}}</h2>
+              <p>{{tweet.tweet}}</p>
+            </ion-label>
+          </ion-item>
+        </div>
+
+        <div *ngSwitchDefault>
+          <ion-item class="tweet" (click)="confirmarExibir(tweet)">
+            <ion-avatar slot="start">
+              <img src="{{tweet.foto}}">
+            </ion-avatar>
+            <ion-label>
+              <h2>{{tweet.usuario}}</h2>
+              <p>{{tweet.tweet}}</p>
+            </ion-label>
+          </ion-item>
+
+        </div>
+      </div>
+
+    </div>
+  </ion-list>
+
+
+</ion-content>

@@ -1,0 +1,11 @@
+ion-fab {
+    // Margem para o floating action button não sobrepor a barra de rolagem do navegador
+    margin-right: 20px;
+}
+
+.tweet {
+    cursor: pointer;
+}
+.tweet:hover {
+    --background: var(--ion-color-medium-shade-light);
+}

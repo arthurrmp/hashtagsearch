@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tweets - Buscador
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <!-- Verificação para escolha de como será a interação do usuário em atualização 
+        * Se for mobile, será via pull-to-refresh
+        * Se for web, será via um floating action button
+  -->
+  <ng-container *ngIf="platform.is('mobile')">
+    <ion-refresher slot="fixed" (ionRefresh)="buscarTweets($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+  </ng-container>
+  <ng-container *ngIf="platform.is('desktop')">
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="buscarTweets()">
+        <ion-icon name="search"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ng-container>
+
+  <ion-item>
+    <ion-label>#</ion-label>
+    <ion-input [(ngModel)]="hashtag" placeholder="Digite aqui a hashtag para pesquisa..."
+      (keyup.enter)="buscarTweets()"></ion-input>
+  </ion-item>
+
+  <!-- Usa a diretiva do Angular NgFor para criar um componente para cada tweet recebido via API. -->
+  <ion-list class="bg-transparent">
+    <div *ngIf="tweets">
+      <div *ngFor="let tweet of tweets">
+        <ion-item class="tweet" (click)="api.confirmarExibir(tweet)">
+          <ion-avatar slot="start">
+            <img src="{{tweet.foto}}">
+          </ion-avatar>
+          <ion-label>
+            <h2>{{tweet.usuario}}</h2>
+            <p>{{tweet.tweet}}</p>
+          </ion-label>
+        </ion-item>
+      </div>
+
+    </div>
+  </ion-list>
+
+
+</ion-content>
