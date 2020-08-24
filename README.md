@@ -29,7 +29,7 @@ Tela que mostra os tweets exibidos no telão durante o dia, sendo os mais novos 
    **npm i**
    
    
-3- *(Ignorar se o backend estiver rodando na mesma máquina)* 
+3- *(Ignorar se o frontend irá rodar apenas na mesma máquina que o backend estará rodando)* 
 
    Altere o ip para o da máquina servidor no arquivo: 
    
