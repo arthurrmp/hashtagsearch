@@ -22,13 +22,13 @@
         * Se for web, será via um floating action button
   -->
   <ng-container *ngIf="platform.is('mobile')">
-    <ion-refresher slot="fixed" (ionRefresh)="buscarTweets($event)">
+    <ion-refresher slot="fixed" (ionRefresh)="obterExibidos($event)">
       <ion-refresher-content></ion-refresher-content>
     </ion-refresher>
   </ng-container>
   <ng-container *ngIf="platform.is('desktop')">
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-      <ion-fab-button (click)="buscarTweets()">
+      <ion-fab-button (click)="obterExibidos()">
         <ion-icon name="refresh"></ion-icon>
       </ion-fab-button>
     </ion-fab>
