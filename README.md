@@ -1,11 +1,18 @@
 # Hashtag Search (Front-end)
 Front-end do projeto Hashtag Search, criado com **Ionic (Angular)** que permite que o usuário busque, selecione e salve tweets com determinada hashtag para exibição em telão de forma prática e rápida.
 
-O sistema em sua versão inicial consiste em duas telas, responsivas e com componentes diferenciados com base no tamanho da tela e qual dispositivo está sendo usado. 
+O sistema em sua versão inicial consiste em duas telas, responsivas e com componentes diferenciados com base no tamanho da tela e qual dispositivo está sendo usado e qual a preferência de tema do usuário (Modo escuro automático com base no escolhido nas configurações do celular). 
 
-**Vídeo demostração**
+# ATENÇÃO
 
-[![](http://img.youtube.com/vi/sVYyRrcJRqk/0.jpg)](http://www.youtube.com/watch?v=sVYyRrcJRqk "Demostração - Buscador de hashtag")
+Este projeto foi criado pode ser usado em conjunto do [Hashtag Search (backend)](https://github.com/arthurrmp/hashtagsearch_backend), que serve para obter os dados dos tweets.
+
+Para obter os Tweets, você precisa obter uma chave da [API do twitter](https://developer.twitter.com).
+
+
+**Vídeo demonstração**
+
+[![](http://img.youtube.com/vi/sVYyRrcJRqk/0.jpg)](http://www.youtube.com/watch?v=sVYyRrcJRqk "demonstração - Buscador de hashtag")
 
 
 **Tela 1: Buscador**
