@@ -5,7 +5,7 @@ O sistema em sua versão inicial consiste em duas telas, responsivas e com compo
 
 # ATENÇÃO
 
-Este projeto foi criado pode ser usado em conjunto do [Hashtag Search (backend)](https://github.com/arthurrmp/hashtagsearch_backend), servindo este para obter os dados dos tweets.
+Este projeto foi criado pode ser usado em conjunto do [Hashtag Search (backend)](https://github.com/arthurrmp/hashtagsearch_backend), que serve para obter os dados dos tweets.
 
 Para obter os Tweets, você precisa obter uma chave da [API do twitter](https://developer.twitter.com).
 
