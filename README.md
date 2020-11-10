@@ -36,13 +36,15 @@ Tela que mostra os tweets exibidos no telão durante o dia, sendo os mais novos 
    **npm i**
    
    
-3- *(Ignorar se o frontend irá rodar apenas na mesma máquina que o backend estará rodando)* 
+3- *(Ignorar se o frontend irá rodar apenas na mesma máquina que o server estará rodando)* 
 
    Altere o ip para o da máquina servidor no arquivo: 
    
    **src/app/services/api.service.ts**
    
-4- Para iniciar um web server de desenvolvimento e testes, você pode usar o comando **ionic serve** no terminal na pasta do projeto.
+4- Inicie o server conforme explicado no [server/readme.md](https://github.com/arthurrmp/hashtagsearch/blob/master/server/README.md)
+   
+5- Para iniciar o app em um web server de desenvolvimento e testes, você pode usar o comando **ionic serve** no terminal na pasta do projeto.
 
 Após isso, automaticamente será aberto uma página web com o projeto.
 Seguindo os tutoriais do [Capacitor](https://capacitorjs.com), pode-se compilar este projeto para qualquer aplicação nativa de qualquer sistema, seja mobile ou desktop.
