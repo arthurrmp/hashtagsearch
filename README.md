@@ -5,10 +5,7 @@ O sistema em sua versão inicial consiste em duas telas, responsivas e com compo
 
 # ATENÇÃO
 
-Este projeto foi criado pode ser usado em conjunto do [Hashtag Search (backend)](https://github.com/arthurrmp/hashtagsearch_backend), que serve para obter os dados dos tweets.
-
 Para obter os Tweets, você precisa obter uma chave da [API do twitter](https://developer.twitter.com).
-
 
 **Vídeo demonstração**
 
@@ -34,7 +31,6 @@ Tela que mostra os tweets exibidos no telão durante o dia, sendo os mais novos 
    **npm install -g @ionic/cli**
    
    **npm i**
-   
    
 3- *(Ignorar se o frontend irá rodar apenas na mesma máquina que o server estará rodando)* 
 
